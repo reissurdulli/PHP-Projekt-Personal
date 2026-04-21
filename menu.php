@@ -30,34 +30,20 @@
   </div>
 </nav>
 
-  <header class="header py-5" id="home">
-    <div class="container py-5">
-      <div class="row align-items-center">
-        <div class="col-md-6 text-center text-md-start">
-          <h2 class="hero-sub p-3 border border-dashed mb-4">BEST BURGERS IN PRISHTINA</h2>
-          <h1 class="hero-title">BURGER <span class="d-block text-secondary">WEEK DEAL</span></h1>
-        </div>
-        <div class="col-md-6">
-          <img src="images/header.png" class="img-fluid" alt="header">
-        </div>
-      </div>
-    </div>
-  </header>
 
 
 <!-- kto kards qe jon per me bo order -->
+ <!-- hamburgerat me diqka -->
 <section class="container py-5 text-center" id="menu">
-  <h3 class="bg-warning d-inline-block px-4 py-1 mb-3">ALWAYS TASTY</h3>
-  <h2 class="section-header">CHOOSE & EAT</h2>
-  
+  <h3 class="bg-warning d-inline-block px-4 py-1 mb-3">Burgers(Hamburgerat)</h3>
   <div class="row g-4 mt-4">
     
     <div class="col-md-4">
       <div class="card h-100 border-0 shadow-sm p-3">
-        <img src="images/ChickenBurger.png" class="card-img-top mx-auto" style="max-width:200px">
+        <img src="images/ChickenBurger2.jpg" class="card-img-top mx-auto" style="max-width:200px">
         <div class="card-body">
           <h4>Chicken Burger</h4>
-          <p>2.50 &euro;</p>
+          <p>2.70 &euro;</p>
           <button class="btn btn-danger px-4">ORDER NOW</button>
         </div>
       </div>
@@ -65,10 +51,10 @@
     
         <div class="col-md-4">
       <div class="card h-100 border-0 shadow-sm p-3">
-        <img src="images/picaMargarita.png" class="card-img-top mx-auto" style="max-width:200px">
+        <img src="images/cheese-burger.png" class="card-img-top mx-auto" style="max-width:200px">
         <div class="card-body">
-          <h4>Pizza Margarita</h4>
-          <p>4 &euro;</p>
+          <h4>Cheese Burger</h4>
+          <p>3 &euro;</p>
           <button class="btn btn-danger px-4">ORDER NOW</button>
         </div>
       </div>
@@ -77,18 +63,108 @@
 
     <div class="col-md-4">
       <div class="card h-100 border-0 shadow-sm p-3">
-        <img src="images/pomfrit.png" class="card-img-top mx-auto" style="max-width:200px">
+        <img src="images/BeefBurger.jpg" class="card-img-top mx-auto" style="max-width:200px">
         <div class="card-body">
-          <h4>Fries</h4>
-          <p>1.5 &euro;</p>
+          <h4>Beef Burger</h4>
+          <p>2.70 &euro;</p>
           <button class="btn btn-danger px-4">ORDER NOW</button>
         </div>
       </div>
-    </div> </div> <div class="mt-5">
-    <a href="#" class="btn btn-danger px-4">SEE MORE</a>
-  </div>
+    </div> </div>
 </section>
-  
+
+<!-- picat me diqka -->
+<section class="container py-5 text-center" id="menu">
+  <h3 class="bg-warning d-inline-block px-4 py-1 mb-3">Pizzas(Picat)</h3>
+  <div class="row g-4 mt-4">
+    
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm p-3">
+        <img src="images/PicaMargarita.png" class="card-img-top mx-auto" style="max-width:200px">
+        <div class="card-body">
+          <h4>Margamargherita pizza</h4>
+          <p>4 &euro;</p>
+          <button class="btn btn-danger px-4">ORDER NOW</button>
+        </div>
+      </div>
+    </div> 
+
+        <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm p-3">
+        <img src="images/peperoni.png" class="card-img-top mx-auto" style="max-width:200px">
+        <div class="card-body">
+          <h4>Pepperoni Pizza</h4>
+          <p>4.70 &euro;</p>
+          <button class="btn btn-danger px-4">ORDER NOW</button>
+        </div>
+      </div>
+    </div> 
+
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm p-3">
+        <img src="images/Sausage.png" class="card-img-top mx-auto" style="max-width:200px">
+        <div class="card-body">
+          <h4>Sausage Pizza</h4>
+          <p>4.30 &euro;</p>
+          <button class="btn btn-danger px-4">ORDER NOW</button>
+        </div>
+      </div>
+    </div> </div>
+</section>    
+
+<!-- PIJET E NDRYSHME -->
+<section class="container py-5 text-center" id="menu">
+  <h3 class="bg-warning d-inline-block px-4 py-1 mb-3">Drinks(Pijet)</h3>
+  <div class="row g-4 mt-4">
+    
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm p-3">
+        <img src="images/coke.png" class="card-img-top mx-auto" style="max-width:200px">
+        <div class="card-body">
+          <h4>Cocacola</h4>
+          <p>0.70 &euro;</p>
+          <button class="btn btn-danger px-4">ORDER NOW</button>
+        </div>
+      </div>
+    </div> 
+
+        <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm p-3">
+        <img src="images/colazero.png" class="card-img-top mx-auto" style="max-width:200px">
+        <div class="card-body">
+          <h4>Cocacola Zero</h4>
+          <p>0.70 &euro;</p>
+          <button class="btn btn-danger px-4">ORDER NOW</button>
+        </div>
+      </div>
+    </div> 
+
+    <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm p-3">
+        <img src="images/pepsi.jpg" class="card-img-top mx-auto" style="max-width:200px">
+        <div class="card-body">
+          <h4>Pepsi</h4>
+          <p>0.70 &euro;</p>
+          <button class="btn btn-danger px-4">ORDER NOW</button>
+        </div>
+      </div>
+    </div>
+
+            <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm p-3">
+        <img src="images/Fanta.png" class="card-img-top mx-auto" style="max-width:200px">
+        <div class="card-body">
+          <h4>Cocacola Zero</h4>
+          <p>0.70 &euro;</p>
+          <button class="btn btn-danger px-4">ORDER NOW</button>
+        </div>
+      </div>
+    </div> 
+
+</div>
+</section>    
+
+
 
 <!-- mdbootstrap footer -->
 <footer class="bg-dark text-white pt-5 pb-4" id="contact">
@@ -138,6 +214,6 @@
   </div>
 </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
