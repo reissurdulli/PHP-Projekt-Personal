@@ -150,11 +150,34 @@
       </div>
     </div>
 
-            <div class="col-md-4">
+
+      <div class="col-md-4">
       <div class="card h-100 border-0 shadow-sm p-3">
         <img src="images/Fanta.png" class="card-img-top mx-auto" style="max-width:200px">
         <div class="card-body">
           <h4>Cocacola Zero</h4>
+          <p>0.70 &euro;</p>
+          <button class="btn btn-danger px-4">ORDER NOW</button>
+        </div>
+      </div>
+    </div> 
+
+      <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm p-3">
+        <img src="images/Uje.png" class="card-img-top mx-auto" style="max-width:200px">
+        <div class="card-body">
+          <h4>Uje</h4>
+          <p>0.70 &euro;</p>
+          <button class="btn btn-danger px-4">ORDER NOW</button>
+        </div>
+      </div>
+    </div> 
+
+      <div class="col-md-4">
+      <div class="card h-100 border-0 shadow-sm p-3">
+        <img src="images/uje-gazuar.png" class="card-img-top mx-auto" style="max-width:200px">
+        <div class="card-body">
+          <h4>Uje i gazuar</h4>
           <p>0.70 &euro;</p>
           <button class="btn btn-danger px-4">ORDER NOW</button>
         </div>
