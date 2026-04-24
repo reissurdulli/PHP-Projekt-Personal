@@ -1,3 +1,27 @@
+<?php
+include_once('config.php');
+
+if(isset($_POST['submit'])) {
+    $emri     = $_POST['emri'];
+    $username = $_POST['username'];
+    $email    = $_POST['email'];
+    $password = $_POST['password'];
+
+    $sql = "INSERT INTO users (emri, username, email, password, is_admin) 
+            VALUES (:emri, :username, :email, :password, 'false')";
+
+    $prep = $conn->prepare($sql);
+
+    $prep->bindParam(':emri',     $emri);
+    $prep->bindParam(':username', $username);
+    $prep->bindParam(':email',    $email);
+    $prep->bindParam(':password', $password);
+
+    $prep->execute();
+
+    header("Location: login.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,43 +30,42 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css" />
-  <title>Hamburger te reisi</title>
+  <title>Hamburger te Reisi - Sign Up</title>
 </head>
 <body>
 
-
-  <section class="vh-100" style="background: url('images/header-bg.png') center/cover no-repeat;">
+<section class="vh-100" style="background: url('images/header-bg.png') center/cover no-repeat;">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-        <div class="card shadow-2-strong" style="border-radius: 1rem;" >
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
           <div class="card-body p-5 text-center">
 
-            <h3 class="mb-5">Sign in</h3>
+            <h3 class="mb-5">Sign Up</h3>
 
-            <div data-mdb-input-init class="form-outline mb-4">
-              <input type="text" id="typeEmailX-2" class="form-control form-control-lg" />
-              <label class="form-label" for="typeEmailX-2">Name</label>
-            </div>
+            <form action="signup.php" method="POST">
 
-            <div data-mdb-input-init class="form-outline mb-4">
-              <input type="text" id="typePasswordX-2" class="form-control form-control-lg" />
-              <label class="form-label" for="typePasswordX-2">Username</label>
-            </div>
+              <div class="form-outline mb-4">
+                <input type="text" name="emri" class="form-control form-control-lg" placeholder="Your Name" required />
+              </div>
 
-            <div data-mdb-input-init class="form-outline mb-4">
-              <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
-              <label class="form-label" for="typeEmailX-2">Email</label>
-            </div>
+              <div class="form-outline mb-4">
+                <input type="text" name="username" class="form-control form-control-lg" placeholder="Username" required />
+              </div>
 
-            <div data-mdb-input-init class="form-outline mb-4">
-              <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
-              <label class="form-label" for="typePasswordX-2">Password</label>
-            </div>
+              <div class="form-outline mb-4">
+                <input type="email" name="email" class="form-control form-control-lg" placeholder="Email" required />
+              </div>
 
-            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+              <div class="form-outline mb-4">
+                <input type="password" name="password" class="form-control form-control-lg" placeholder="Password" required />
+              </div>
 
+              <button type="submit" name="submit" class="btn btn-danger btn-lg btn-block w-100">Sign Up</button>
 
+              <p class="mt-3">Already have an account? <a href="login.php">Login</a></p>
+
+            </form>
 
           </div>
         </div>
@@ -51,6 +74,6 @@
   </div>
 </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

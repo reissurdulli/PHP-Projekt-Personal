@@ -23,10 +23,19 @@
     </label>
 
     <ul class="nav__links mb-0 list-unstyled">
-      <li><a href="#home">HOME</a></li>
-      <li><a href="#menu">MENU</a></li>
-      <li><a href="#contact">CONTACT US</a></li>
-    </ul>
+  <li><a href="#home">HOME</a></li>
+  <li><a href="menu.php">MENU</a></li>
+  <li><a href="#contact">CONTACT US</a></li>
+  <?php if(isset($_SESSION['user_id'])): ?>
+    <?php if($_SESSION['is_admin'] === 'true'): ?>
+      <li><a href="dashboard.php">DASHBOARD</a></li>
+    <?php endif; ?>
+    <li><a href="logout.php">LOGOUT</a></li>
+  <?php else: ?>
+    <li><a href="login.php">LOGIN</a></li>
+    <li><a href="signup.php">SIGN UP</a></li>
+  <?php endif; ?>
+</ul>
   </div>
 </nav>
 
