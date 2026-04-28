@@ -58,45 +58,13 @@ $users = $getUsers->fetchAll();
 <div class="container-fluid">
   <div class="row">
 
-    <!-- Sidebar -->
-    <div class="col-md-2 sidebar">
-      <div class="logo"> Reisi</div>
-      <a href="#products-section"><i class="ri-restaurant-line me-2"></i>Products</a>
-      <a href="#users-section"><i class="ri-group-line me-2"></i>Users</a>
-      <a href="add.php"><i class="ri-add-circle-line me-2"></i>Add Product</a>
-      <hr style="border-color: rgba(255,255,255,0.2);">
-      <a href="logout.php"><i class="ri-logout-box-line me-2"></i>Logout</a>
-    </div>
+    
 
     <!-- Main content -->
     <div class="col-md-10 p-4">
 
-      <h2 class="mb-1" style="font-family: 'Bebas Neue', sans-serif; color: #42200b; font-size: 2rem;">
-        Welcome, <?= $_SESSION['username'] ?>!
-      </h2>
-      <p class="text-muted mb-4">Hamburger te Reisi — Admin Panel</p>
+      
 
-      <!-- Stats cards -->
-      <div class="row g-3 mb-5">
-        <div class="col-md-4">
-          <div class="card dash-card p-3 shadow-sm">
-            <p class="text-muted mb-1">Total Products</p>
-            <h3 class="fw-bold"><?= count($products) ?></h3>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card dash-card p-3 shadow-sm">
-            <p class="text-muted mb-1">Total Users</p>
-            <h3 class="fw-bold"><?= count($users) ?></h3>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card dash-card p-3 shadow-sm">
-            <p class="text-muted mb-1">Logged in as</p>
-            <h3 class="fw-bold"><?= $_SESSION['is_admin'] === 'true' ? 'Admin' : 'User' ?></h3>
-          </div>
-        </div>
-      </div>
 
       <!-- Products Table -->
       <div id="products-section" class="mb-5">
@@ -168,7 +136,7 @@ $users = $getUsers->fetchAll();
           </table>
         </div>
       </div>
-
+      <a href="logout.php"><i class="ri-logout-box-line me-2"></i>Logout</a>
     </div>
   </div>
 </div>
