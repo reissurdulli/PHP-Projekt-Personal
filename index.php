@@ -35,6 +35,7 @@
     <li><a href="login.php">LOGIN</a></li>
     <li><a href="signup.php">SIGN UP</a></li>
   <?php endif; ?>
+  <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong"><a href="modal.php">Launch demo modal</a></button></li>
 </ul>
   </div>
 </nav>
@@ -97,7 +98,7 @@
     <a href="#" class="btn btn-danger px-4">SEE MORE</a>
   </div>
 </section>
-  
+<!--ky far modal seni -->
 
 <!-- mdbootstrap footer -->
 <footer class="bg-dark text-white pt-5 pb-4" id="contact">
