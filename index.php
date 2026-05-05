@@ -35,7 +35,7 @@
     <li><a href="login.php">LOGIN</a></li>
     <li><a href="signup.php">SIGN UP</a></li>
   <?php endif; ?>
-  <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong"><a href="modal.php">Launch demo modal</a></button></li>
+  
 </ul>
   </div>
 </nav>
